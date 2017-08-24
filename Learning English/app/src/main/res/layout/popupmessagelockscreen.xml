@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner"
+        android:orientation="vertical">
+        <!-- Head -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/cornerhead">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="43dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/closePopup"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close47"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <!-- End Head -->
+
+        <!-- Bottom -->
+        <LinearLayout
+            android:id="@+id/lnlayoutbtnCallme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/imgExample"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/close47"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="word"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tvMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a Meaning"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/txtFillVoc"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="#000000"
+            />
+            <TextView
+                android:id="@+id/tvExampleFullPhrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a text"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Check"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <!-- End Bottom -->
+    </LinearLayout>
+
+</LinearLayout>
